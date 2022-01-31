@@ -18,12 +18,12 @@ public class C05_FacebookKayit extends TestBase {
         //2- Yeni hesap olustur butonuna basalim
         driver.findElement(By.xpath("//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")).click();
         //3- Ad, soyad, mail ve sifre kutularina deger yazalim ve kaydol tusuna basalim
-        WebElement ad = driver.findElement(By.xpath("//input[@name='firstname']"));
+        WebElement isimKutusu= driver.findElement(By.xpath("//input[@name='firstname']"));
         Actions actions = new Actions(driver);
-        actions.click(ad).
-                sendKeys("suat").
+        actions.click(isimKutusu).
+                sendKeys("elif").
                 sendKeys(Keys.TAB).
-                sendKeys("oruc").
+                sendKeys("akar").
                 sendKeys(Keys.TAB).
                 sendKeys("abc@hotmail.com").
                 sendKeys(Keys.TAB).

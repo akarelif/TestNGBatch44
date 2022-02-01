@@ -24,6 +24,8 @@ public class C04_Screenshot extends TestBase {
         tumSayfaSS=tss.getScreenshotAs(OutputType.FILE);
 
         // eger spesific bir webelementin screenshot'ini almak istiyorsaniz
-
+        WebElement logoElementi=driver.findElement(By.xpath("(//img[@alt='Google'])[1]"));
+        File logoResmi=new File("src/logo.png");
+        logoResmi=logoElementi.getScreenshotAs(OutputType.FILE);
     }
 }
